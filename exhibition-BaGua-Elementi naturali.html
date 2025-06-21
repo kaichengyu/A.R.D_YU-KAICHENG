@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>L'opposizione di Yin e Yang</title>
+  <link rel="stylesheet" href="style.css" />
+
+   <style>
+    @font-face {
+      font-family: "FA_UWXQXUZNSQ";
+      src: url("FA_UWXQXUZNSQ.ttf") format("truetype");
+    }
+    h1 {
+      font-family: "FA_UWXQXUZNSQ", sans-serif;
+    }
+  </style>
+
+  <!-- Swiper 样式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  
+  <!-- Lightbox 样式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" />
+
+  <style>
+    .exhibition-detail {
+      max-width: 900px;
+      margin: 100px auto;
+      padding: 20px;
+    }
+    .exhibition-detail img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+    header ul {
+      list-style: none;
+      padding: 0;
+    }
+    header li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    header a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>YU KAICHENG</h1>
+    <ul>
+      <li><a href="index.html#art">Back to ART</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <div class="exhibition-detail">
+      <!-- Swiper 容器 -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="images/BaGua/93054c61b8bf3df87771284341ee1e1c.JPG" data-lightbox="exhibition">
+              <img src="images/BaGua/93054c61b8bf3df87771284341ee1e1c.JPG" alt="Exhibition Effect" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="images/BaGua/3b82afd6a7d02d5acceb60b5acdaba0f.JPG" data-lightbox="exhibition">
+              <img src="images/BaGua/3b82afd6a7d02d5acceb60b5acdaba0f.JPG" alt="Exhibition Effect" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="images/BaGua/八卦-自然.反面.png" data-lightbox="exhibition">
+              <img src="images/BaGua/八卦-自然.反面.png" alt="Detail 1" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="images/BaGua/八卦-自然.正面.png" data-lightbox="exhibition">
+              <img src="images/BaGua/八卦-自然.正面.png" alt="Detail 2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="images/BaGua/八卦-自然.展开.png" data-lightbox="exhibition">
+              <img src="images/BaGua/八卦-自然.展开.png" alt="Detail 3" class="offset-image"/>
+            </a>
+          </div>
+        </div>
+        <!-- 滑动按钮 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- 分页小圆点 -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <h2>exhibition-BaGua-Elementi naturali.html</h2>
+      <p><strong>Exhibition Period:</strong> 1 Aprile – 30 Aprile 2025</p>
+      <p>
+        In questa mostra, Yu Kaicheng esplora la dialettica tra Yin e Yang attraverso pitture astratte ispirate a simboli tradizionali orientali
+      </p>
+      <p>
+        Le cere solide e il burro vengono trasformati in forma liquida dal calore del fuoco
+e rimangono nel quadro in combinazione con la polvere di colore: questo è il
+legame tra acqua e fuoco.
+La miscelazione di polvere di colore e acqua: questo è il legame tra acqua e terra.
+Tracce lasciate dal fuoco che brucia la carta: è il legame tra fuoco e legno.
+I segni incisi sulla carta: è il legame tra oro e terra.
+Polvere di colore attaccata alla carta: è il legame tra legno e terra.
+L'interconnessione dei cinque elementi della natura esprime lo stato della natura e
+riflette i sentimenti dell'uomo nei suoi confronti.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p style="text-align: center; padding: 20px;">A.R.D KAICHENG</p>
+  </footer>
+
+  <!-- Swiper 脚本 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Lightbox 脚本 -->
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+
+  <!-- 初始化 Swiper -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <!-- Lightbox 可选配置 -->
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    });
+  </script>
+</body>
+</html>

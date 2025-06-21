@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>L'opposizione di Yin e Yang</title>
+  <link rel="stylesheet" href="style.css" />
+
+   <style>
+    @font-face {
+      font-family: "FA_UWXQXUZNSQ";
+      src: url("FA_UWXQXUZNSQ.ttf") format("truetype");
+    }
+    h1 {
+      font-family: "FA_UWXQXUZNSQ", sans-serif;
+    }
+  </style>
+
+  <!-- Swiper 样式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  
+  <!-- Lightbox 样式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" />
+
+  <style>
+    .exhibition-detail {
+      max-width: 900px;
+      margin: 100px auto;
+      padding: 20px;
+    }
+    .exhibition-detail img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+    header ul {
+      list-style: none;
+      padding: 0;
+    }
+    header li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    header a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>YU KAICHENG</h1>
+    <ul>
+      <li><a href="index.html#art">Back to ART</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <div class="exhibition-detail">
+      <!-- Swiper 容器 -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="images/Ventotto case/IMG_0889 2.JPG" data-lightbox="exhibition">
+              <img src="images/Ventotto case/IMG_0889 2.JPG" alt="Exhibition Effect" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="images/Ventotto case/IMG_0889.JPG" data-lightbox="exhibition">
+              <img src="images/Ventotto case/IMG_0889.JPG" alt="Exhibition Effect" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="images/Ventotto case/IMG_0888.JPG" data-lightbox="exhibition">
+              <img src="images/Ventotto case/IMG_0888.JPG" alt="Detail 1" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="images/Ventotto case/IMG_0492.JPG" data-lightbox="exhibition">
+              <img src="images/Ventotto case/IMG_0492.JPG" alt="Detail 2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="images/Ventotto case/IMG_0396.JPG" data-lightbox="exhibition">
+              <img src="images/Ventotto case/IMG_0396.JPG" alt="Detail 3" />
+            </a>
+          </div>
+        </div>
+        <!-- 滑动按钮 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- 分页小圆点 -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <h2>exhibition-BaGua-Elementi naturali.html</h2>
+      <p><strong>Exhibition Period:</strong> 1 Aprile – 30 Aprile 2025</p>
+      <p>
+        In questa mostra, Yu Kaicheng si ispira ai simboli tradizionali orientali ed esplora il rapporto tra l'universo e la natura attraverso la pittura astratta.
+      </p>
+      <p>
+        Le ventotto case (二十八宿, Èr Shí Bā Xiù), hsiu, xiu o sieu fanno parte del sistema
+delle costellazioni cinesi. Esse possono essere considerate come l'equivalente delle
+costellazioni zodiacali nell'astronomia occidentale, benché le ventotto case riflettano il
+movimento della Luna lungo un mese siderale piuttosto che quello del Sole in un anno
+tropico.
+Il suo lavoro attinge alla tradizione culturale cinese, unica nel suo genere,，
+dell’esplorazione dello spazio fin dall'antichità e la combina con la propria comprensione. È
+un processo di curiosità e di ricerca di risposte all'ignoto. Utilizza la polarità e
+l'interconnessione degli elementi naturali: metallo, legno, acqua, fuoco e terra per costruire
+un universo stellato e tornare alla fonte.
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p style="text-align: center; padding: 20px;">A.R.D KAICHENG</p>
+  </footer>
+
+  <!-- Swiper 脚本 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Lightbox 脚本 -->
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+
+  <!-- 初始化 Swiper -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <!-- Lightbox 可选配置 -->
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    });
+  </script>
+</body>
+</html>

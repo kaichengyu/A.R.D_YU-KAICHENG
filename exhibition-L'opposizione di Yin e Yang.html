@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>L'opposizione di Yin e Yang</title>
+  <link rel="stylesheet" href="style.css" />
+
+   <style>
+    @font-face {
+      font-family: "FA_UWXQXUZNSQ";
+      src: url("FA_UWXQXUZNSQ.ttf") format("truetype");
+    }
+    h1 {
+      font-family: "FA_UWXQXUZNSQ", sans-serif;
+    }
+  </style>
+
+  <!-- Swiper 样式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
+  
+  <!-- Lightbox 样式 -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/css/lightbox.min.css" />
+
+  <style>
+    .exhibition-detail {
+      max-width: 900px;
+      margin: 100px auto;
+      padding: 20px;
+    }
+    .exhibition-detail img {
+      width: 100%;
+      height: auto;
+      margin-bottom: 20px;
+      border-radius: 8px;
+    }
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+    header ul {
+      list-style: none;
+      padding: 0;
+    }
+    header li {
+      display: inline-block;
+      margin: 0 10px;
+    }
+    header a {
+      text-decoration: none;
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>YU KAICHENG</h1>
+    <ul>
+      <li><a href="index.html#art">Back to ART</a></li>
+    </ul>
+  </header>
+
+  <main>
+    <div class="exhibition-detail">
+      <!-- Swiper 容器 -->
+      <div class="swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a href="images/L'opposizione di Yin e Yang/9aedbcd7b369c662b82b37bbd4ddccd0.JPG" data-lightbox="exhibition">
+              <img src="images/L'opposizione di Yin e Yang/9aedbcd7b369c662b82b37bbd4ddccd0.JPG" alt="Exhibition Effect" />
+            </a>
+          </div>
+         <div class="swiper-slide">
+  <a href="images/L'opposizione di Yin e Yang/L'opposizione di Yin e Yang.png" data-lightbox="exhibition">
+    <img src="images/L'opposizione di Yin e Yang/L'opposizione di Yin e Yang.png" alt="Presentation" class="offset-image" />
+  </a>
+</div>
+
+          <div class="swiper-slide">
+            <a href="images/L'opposizione di Yin e Yang/e044d03611f0f3aa18ec4be833f61628.JPG" data-lightbox="exhibition">
+              <img src="images/L'opposizione di Yin e Yang/e044d03611f0f3aa18ec4be833f61628.JPG" alt="Detail 1" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="images/L'opposizione di Yin e Yang/6ebd2f131416575b6fc84fc84a6c315a.JPG" data-lightbox="exhibition">
+              <img src="images/L'opposizione di Yin e Yang/6ebd2f131416575b6fc84fc84a6c315a.JPG" alt="Detail 2" />
+            </a>
+          </div>
+          <div class="swiper-slide">
+            <a href="images/L'opposizione di Yin e Yang/6153a1fd9d35a615f548af1dfe942bf5.JPG" data-lightbox="exhibition">
+              <img src="images/L'opposizione di Yin e Yang/6153a1fd9d35a615f548af1dfe942bf5.JPG" alt="Detail 3" />
+            </a>
+          </div>
+        </div>
+        <!-- 滑动按钮 -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+        <!-- 分页小圆点 -->
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <h2>L'opposizione di Yin e Yang</h2>
+      <p><strong>Exhibition Period:</strong> 1 Aprile – 30 Aprile 2025</p>
+      <p>
+        In questa mostra, Yu Kaicheng esplora la dialettica tra Yin e Yang attraverso pitture astratte ispirate a simboli tradizionali orientali
+      </p>
+      <p>
+        Sul punto dell'“opposizione”, naturalmente il più facile da capire, ogni cosa, ogni cosa ha i suoi “due lati”, un lato può essere chiamato “yin”, l'altro lato può essere detto “yang”. Un
+        lato può essere chiamato “yin” e l'altro
+      </p>
+    </div>
+  </main>
+
+  <footer>
+    <p style="text-align: center; padding: 20px;">A.R.D KAICHENG</p>
+  </footer>
+
+  <!-- Swiper 脚本 -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <!-- Lightbox 脚本 -->
+  <script src="https://cdn.jsdelivr.net/npm/lightbox2@2/dist/js/lightbox.min.js"></script>
+
+  <!-- 初始化 Swiper -->
+  <script>
+    const swiper = new Swiper('.swiper', {
+      loop: true,
+      spaceBetween: 10,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+  <!-- Lightbox 可选配置 -->
+  <script>
+    lightbox.option({
+      'resizeDuration': 200,
+      'wrapAround': true
+    });
+  </script>
+</body>
+</html>
